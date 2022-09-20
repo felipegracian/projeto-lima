@@ -59,11 +59,45 @@ main {
     font-family: 'Inter';
 
 }
+.grid__main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
 .tenis {
     width: 600px;
     height: 600px;
     background-color: #9C0610;
     border-radius: 50%;
-    
-
+    grid-column: 1/6;
+    place-self: center end;
+}
+.marca{
+    grid-column: 6/-1;
+    grid-row: 1;
+    place-self: start center;
+    width: 672px;
+    font-weight: 400;
+    font-size: 1.5rem;   
+}
+.description{
+    grid-column: 6/-1;
+    grid-row: 1;
+    place-self: center;
+    width: 672px;
+}
+.description__title {
+    font-size: 96px;
+    font-weight: 700;
+}
+.description__text {
+    font-size: 24px;
+    font-weight: 400;
+    color:  #585858;
+}
+.background__shop {
+    width: 382px;
+    height: 101px;
+    background-color: red;
+    border-radius: 50px;
+    grid-column: 7/-1;
 }
